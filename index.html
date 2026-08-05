@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <title>Three Start Media Mock Up</title>
 </head>
 <!--For this assignment I decided to make a bigger box for the entire website so that it can all have the same border size, but the background can extend with
@@ -28,7 +33,7 @@ the wideness of the website-->
                 <div class="search">
                     <form action="/search" method="get">
                         <input type="text" name="buscador" placeholder="Search" required>
-                        <button type="submit">Search</button>
+                        <button type="submit"><span class="material-symbols-outlined">search</span></button>
                     </form>
                 </div>
             </div>
@@ -46,7 +51,7 @@ the wideness of the website-->
                         full-size bed. Find a way to fit in tiny box found somthing move i bite it tail.</p>
                 </div>
                 <div class="Connect">
-                    <button>Connect With Us</button>
+                    <button>Connect With Us<span class="material-symbols-outlined">arrow_right</span></button>
                 </div>
             </div>
         </header>
@@ -77,69 +82,69 @@ the wideness of the website-->
 <!--Then I created a box for the different services that I can use to fix the boxes side to side or in a column with flexbox-->
                 <div class="boxes">
                     <h2 id="Service">Our Services</h2>
-                    <div class="box1">
+                    <article class="box1">
                         <img src="images/digital.jpg" alt="Image of an emplyer using phone and laptop">
                         <h3>Digital Transformation</h3>
                         <p>Find a way to fit in tiny box found somthing move i bite it tail. Mew mew if 
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
-                        <button>Digital Plans</button>
-                    </div>
-                    <div class="box2">
+                        <button>Digital Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                        </article>
+                    <article class="box2">
                         <img src="images/marketing.jpg" alt="Image of a laptop with graphics">
                         <h3>Marketing</h3>
                         <p>Find a way to fit in tiny box found somthing move i bite it tail. Mew mew if
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
-                            <button>Marketing Plans</button>
-                    </div>
-                    <div class="box3">
+                            <button>Marketing Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </article>
+                    <article class="box3">
                         <img src="images/video.jpg" alt="A phone with the logo of Youtube in its screen">
                         <h3>Video Production</h3>
                         <p>Find a way to fit in tiny box found somthing move i bite it tail. Mew mew if
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
-                        <button>Video Plans</button>
-                    </div>
-                    <div class="box4">
+                        <button>Video Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </article>
+                    <article class="box4">
                         <img src="images/web.jpg" alt="Image of a phone over a notebook">
                         <h3>Web Development</h3>
                         <p>Find a way to fit in tiny box found somthing move i bite it tail. Mew mew if
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
-                        <button>Web Plans</button>
+                        <button>Web Plans<span class="material-symbols-outlined">arrow_right</span></button>
                     </div>
-                    <div class="box5">
+                    <article class="box5">
                         <img src="images/print.jpg" alt="Image of newspaper stants in big the street">
                         <h3>Print</h3>
                         <p>Find a way to fit in tiny box found somthing move i bite it tail. Mew mew if
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
-                            <button>Print Plans</button>
-                    </div>
+                            <button>Print Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                        </article>
                 </div>
 <!--I created the vision box for the images to be its background and then the text to be on top of the image-->
-            <div class="Vision">
+            <article class="Vision">
                 <img src="images/vision.jpg" alt="Photogrpah of paper boats">
                 <div class="visiontext">
-                    <h4>Our Vision</h4>
+                    <h3>Our Vision</h3>
                     <p>Scratch the furniture lick butt. Headbutt owner's knee leave hair on owner's clothes 
                     and gnaw the corn cob but shake treat bag, or munch, munch, chomp, chomp lounge in
                      doorway run around the house at 4 in the morning.</p>
-                    <button>Learn More</button>
+                    <button>Learn More<span class="material-symbols-outlined">arrow_right</span></button>
                 </div>
-            </div>
+            </article>
 <!--Then I created a tim box for the members of the company, leaving the title on its own so that I can move the text and images freely-->
             <article id="Tim">
-                <h3>Our Team</h3>
+                <h2>Our Team</h2>
 <!--I figure that either way I would have to type a bit depending on how I organized the photo and text on my css. I decided on putting the photos on its own box and the 
 text on its own that wat they can sit side by side, or photo then text in the phone format-->
                 <div class="member1">
                     <div class="m1photo">
                         <img src="images/john.jpg" alt="Portrait of a serious CEO">
                     </div>
-                    <h4>John Doe</h4>
-                    <h5>CEO and Co-owner</h5>
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
@@ -152,8 +157,8 @@ text on its own that wat they can sit side by side, or photo then text in the ph
                     <div class="m2photo">
                         <img src="images/bob.jpg" alt="Portrait of a no so serious CFO">
                     </div>
-                    <h4>Bob Bite</h4>
-                    <h5>CFO and Co-owner</h5>
+                    <h3>Bob Bite</h3>
+                    <h4>CFO and Co-owner</h4>
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
@@ -169,14 +174,14 @@ the map. This way I can jsut move hours before and then in website format I can 
                 <h2>Contact Us</h2>
                 <div class="message">
                     <h3>Send us a message</h3>
-                        <form action="information" method="get">
+                        <form action="#" method="get">
                         <label for="name">Full Name</label>
                         <input id="name" type="text" name="name">
                         <label for="email">Email</label>
                         <input id="email" type="email" name="email">
                         <label for="message">Message</label>
                         <input id="message" type="text" name="message">
-                        <button type="submit">Submit</button>
+                        <button type="submit">Send</button>
                         </form>
                 </div>
                 <div class="location">
@@ -185,6 +190,7 @@ the map. This way I can jsut move hours before and then in website format I can 
                 </div>
             </section>
             <div class="hours">
+                <h3>Hours of operation</h3>
                 <table>
                     <tr>
                     <th>Days</th>
