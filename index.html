@@ -40,48 +40,44 @@ the wideness of the website-->
         </nav>
 <!--In the header, I added the image before the div since I want it to extend along with the website as a background-->
         <header>
-            <img src="images/main-banner.jpg" alt="A photograph of an open concept office place">
 <!--I add the two more boxes, because I want the text and button to be on top of the image-->
             <div class="limit">
-                <div class="Text">
+                <div class="text">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Cat ipsum dolor sit amet, always hungry and kitty ipsum dolor sit amet, 
                         shed everywhere shed everywhere stretching attack your ankles chase the red dot, 
                         hairball run catnip eat the grass sniff and weigh eight pounds but take up a 
                         full-size bed. Find a way to fit in tiny box found somthing move i bite it tail.</p>
-                </div>
-                <div class="Connect">
+                <div class="connect">
                     <button>Connect With Us<span class="material-symbols-outlined">arrow_right</span></button>
+                </div>
                 </div>
             </div>
         </header>
 <!--In main I added the rest of the website services, team, location, contact info and hours-->
         <main>
+            <section id="about">
             <div class="limit">
 <!--I decided to have my first box to be an image-->
                 <div class="pinpon">
                     <img src="images/about-us.jpg" alt="A photo of a ping pong table in an office">
                 </div>
 <!--The second box will be the about us section that has to be sitting in teh side or the bottom (in phones)-->
-                <article id="about">
+                <article>
                     <h2>About Us</h2>
                     <p>The door is opening! how exciting oh, it's you, meh jumps off balcony gives owner dead 
                         mouse at present then poops in litter box snatches yarn and fights with dog cat chases 
-                        laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub 
-                        and meows when owner fills food dish the cat knocks over the food dish cat slides down 
-                        the water slide and into pool and swims even though it does not like water, scratch so owner 
-                        bleeds, and friends are not food and meow for food, then when human fills food dish, 
-                        take a few bites of food and continue meowing and scratch my tummy actually i hate you 
-                        now fight me. Rub face on owner leave hair on owner's clothes. Scoot butt on the rug check 
-                        cat door for ambush 10 times before coming in. Claw drapes sniff catnip and act crazy.<br>
-                        Litter box is life poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, 
+                        laser then plays in grass finds tiny spot.</p>
+
+                    <p>Litter box is life poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, 
                         eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree, but in the middle of the night i
-                        crawl onto your chest and purr gently to help you sleep and claws in your leg yet commence midnight zoomies.
-                        Leave hair on owner's clothes. </p>
+                        crawl onto your chest. </p>
                 </article>
+                </div>
+                </section>
 <!--Then I created a box for the different services that I can use to fix the boxes side to side or in a column with flexbox-->
                 <div class="boxes">
-                    <h2 id="Service">Our Services</h2>
+                    <h2 id="service">Our Services</h2>
                     <article class="box1">
                         <img src="images/digital.jpg" alt="Image of an emplyer using phone and laptop">
                         <h3>Digital Transformation</h3>
@@ -113,7 +109,7 @@ the wideness of the website-->
                             human is on laptop sit on the keyboard. Eat my own ears chase mice, but cat
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
                         <button>Web Plans<span class="material-symbols-outlined">arrow_right</span></button>
-                    </div>
+                    </article>
                     <article class="box5">
                         <img src="images/print.jpg" alt="Image of newspaper stants in big the street">
                         <h3>Print</h3>
@@ -124,8 +120,7 @@ the wideness of the website-->
                         </article>
                 </div>
 <!--I created the vision box for the images to be its background and then the text to be on top of the image-->
-            <article class="Vision">
-                <img src="images/vision.jpg" alt="Photogrpah of paper boats">
+            <article class="vision">
                 <div class="visiontext">
                     <h3>Our Vision</h3>
                     <p>Scratch the furniture lick butt. Headbutt owner's knee leave hair on owner's clothes 
@@ -139,6 +134,7 @@ the wideness of the website-->
                 <h2>Our Team</h2>
 <!--I figure that either way I would have to type a bit depending on how I organized the photo and text on my css. I decided on putting the photos on its own box and the 
 text on its own that wat they can sit side by side, or photo then text in the phone format-->
+                <article class="limit">                
                 <div class="member1">
                     <div class="m1photo">
                         <img src="images/john.jpg" alt="Portrait of a serious CEO">
@@ -148,11 +144,10 @@ text on its own that wat they can sit side by side, or photo then text in the ph
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
-                        coming in meeeeouw, leave buried treasure in the sandbox for the toddlers. 
-                        Kitty kitty get my claw stuck in the dog's ear you are a captive audience 
-                        while sitting on the toilet, pet me but cats are fats i like to pets them 
-                        they like to meow back. </p>
+                        coming in meeeeouw. </p>
+                </article>
                 </div>
+                <article class="limit">
                 <div class="member2">
                     <div class="m2photo">
                         <img src="images/bob.jpg" alt="Portrait of a no so serious CFO">
@@ -162,14 +157,13 @@ text on its own that wat they can sit side by side, or photo then text in the ph
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
-                        coming in meeeeouw, leave buried treasure in the sandbox for the toddlers. 
-                        Kitty kitty get my claw stuck in the dog's ear you are a captive audience 
-                        while sitting on the toilet, pet me but cats are fats i like to pets them 
-                        they like to meow back. </p>
+                        coming in meeeeouw, leave buried treasure in the sandbox for the toddlers. </p>
                 </div>
+                </article>
             </article>
 <!--Finally, the Contact section is divided in three boxes, messages, location and hours. I set them in boxes because in the phone version the hours are located on top of 
 the map. This way I can jsut move hours before and then in website format I can put location and contact to sit side by side.-->
+            <div class="limit">
             <section id="Contact">
                 <h2>Contact Us</h2>
                 <div class="message">
@@ -183,12 +177,16 @@ the map. This way I can jsut move hours before and then in website format I can 
                         <input id="message" type="text" name="message">
                         <button type="submit">Send</button>
                         </form>
-                </div>
+                </div>        
+            </div>
+            <div class="limit">
                 <div class="location">
                     <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17184.51446447573!2d-75.78055842148821!3d45.35108591331304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e1!3m2!1sen!2sca!4v1785359595267!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17184.51446447573!2d-75.78055842148821!3d45.35108591331304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e1!3m2!1sen!2sca!4v1785359595267!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
+            </div>    
             </section>
+            <div class="limit">
             <div class="hours">
                 <h3>Hours of operation</h3>
                 <table>
@@ -205,7 +203,7 @@ the map. This way I can jsut move hours before and then in website format I can 
                     <td> Closed</td>
                     </tr>
                 </table>
-            </div>
+            </div>    
             </div>
         </main>
 <!--The fotter has its own limit and paragraph-->
