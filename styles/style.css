@@ -193,9 +193,6 @@ h4{
 	font-weight:bolder;
 	color:#222222;
 }
-p{
-	font-size: 10px;
-}
 a{
 	color:#c78c06;
 	text-decoration: none;
@@ -407,6 +404,11 @@ header .text{
 /********************
 	TEAM STYLE HELP NEEDED
 *********************/
+#Tim h2{
+	margin:10px;
+	padding-top:30px;
+	padding-bottom:15px;
+}
 .member1, .member2{
 	background-color:#ffe6ac;
 	margin-bottom:10px;
@@ -435,10 +437,9 @@ header .text{
 /********************
 	CONTACT STYLE POTENTIAL IMPROVEMENT
 *********************/
-
 #Contact h2{
-	padding-top:40px;
-	padding-bottom:20px;
+	padding-top:30px;
+	padding-bottom:10px;
 }
 #Contact label{
 	display:block;
@@ -486,6 +487,240 @@ header .text{
 	LOCATION STYLE POTENTIAL IMPROVEMENT
 *********************/
 .location h3{
-	margin-top:20px;
+	margin-top:10px;
 	margin-bottom:10px;
+}
+
+/******************************************
+			MEDIA QUERIES
+******************************************/
+@media screen and (min-width:800px){
+
+	.limit{
+		width:90%;
+		max-width:970px;
+		margin: 0 auto;
+		padding-left:10px;
+		padding-right:10px;
+	}	
+	.limit, .boxes{
+		padding-left:60px;
+		padding-right:60px;
+	}
+	.material-symbols-outlined {
+  	font-variation-settings:
+ 	'FILL' 1,
+  	'wght' 600,
+  	'GRAD' 0,
+  	'opsz' 48
+	}
+	h1{
+		font-size:60px;
+		line-height: none;
+	}
+	h2{
+		font-size:40px;
+	}
+	h3{
+		font-size:30px;
+	}
+	p{
+		font-size:12px;
+	}
+	.connect button{
+		font-size: 16px;
+	}
+	iframe{
+		width:50%
+	}
+/******************************
+		NAV
+*******************************/
+	nav{
+		display:flex;
+		justify-content: flex-end;
+		padding:10px;
+	}	
+	#logo{
+		background-color:none;
+	}
+	#logo img{
+		width:65px;
+	}
+	nav .limit{
+		display: flex;
+		justify-content: center;
+	}
+	nav ul{
+		display:flex;
+		justify-content:space-around;
+		margin-left:50px;
+	}
+	nav a{
+		padding-left:30px;
+		padding-right:30px;
+	}
+
+/******************************
+		WELCOME
+*******************************/
+	header{
+		padding-left:40px;
+		padding-right:40px;
+	}
+	header .text{
+		background-color: rgba(0, 0, 0, 0.556);
+		margin-right: 20px;
+		margin-left:20px;
+		padding-top:30px;
+		padding-bottom:30px;
+		padding-top:none;
+		padding-bottom:none;
+	}
+	.text p{
+		margin:5px;
+	}
+/******************************
+		ABOUT
+*******************************/
+#about .limit{
+	display:flex;
+	align-items:stretch;
+}
+.pinpon{
+	width:50%
+}
+.pinpon img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+#about article{
+	width:50%;
+	padding:5px;
+}
+#about h2{
+	font-size: 40px;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+#about p{
+	font-size:12px;
+}
+/******************************
+		SERVICES
+*******************************/
+.boxes{
+	width:90%;
+	max-width:970px;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:repeat(6,1fr);
+	gap:8px;
+}
+.boxes h3{
+	font-size: 30px;
+}
+.boxes p{
+	font-size: 12px;
+}
+.boxes h2{
+	grid-column:1/-1;
+}
+.box1, .box2{
+	grid-column: span 3;
+}
+.box3, .box4, .box5{
+	grid-column:span 2;
+}
+.boxes img{
+	width:100%;
+	display:block;
+}
+/******************************
+		VISION
+*******************************/
+.vision{
+	padding-top:20px;
+	padding-bottom:10px;
+	padding-left:60px;
+	padding-right:60px;
+}
+.visiontext{
+	margin-top:20px;
+}
+.visiontext p{
+	font-size: 12px;;
+}
+/******************************
+		TEAM
+*******************************/
+#Tim h2{
+	padding-left:60px;
+}
+.member1, .member2{
+		margin-bottom:0px;
+}
+.member1 h3,.member2 h3{
+	font-size: 25px;
+	font-weight: bolder;
+}
+.member1 h4::after, .member2 h4::after{
+	content:"";
+	display:block;
+	width: 400px;
+	border-bottom: 1px solid #c78c06;
+	margin:auto 0;
+}
+.member1 p, .member2 p{
+	font-size:12px;
+}
+.member1, .member2{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+.member1 .m1photo{
+	grid-column:1;
+	grid-row:1;
+}
+.member1 h3, .member1 h4, .member1 p{
+	grid-column:2;
+}
+.member2 .m2photo{
+	grid-column:2;
+	grid-row:1;
+}
+.member2 h3, .member2 h4, .member2 p{
+	grid-column:1;
+}
+.member1 img, .member2 img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+/******************************
+		CONTACT/LOCATION
+*******************************/
+#Contact h2{
+	padding-bottom:30px;
+}
+
+.limit #Contact{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	gap:20px;
+}
+.limit #Contact h2{
+	grid-column: 1/-1;
+}
+.limit .location{
+	grid-column: 1;
+	grid-row:1;
+}
+.limit .hours{
+
+	grid-column:1;
+	grid-row: 3;
+}
+
 }
