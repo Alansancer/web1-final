@@ -169,8 +169,7 @@ footer{
 /*******************************************
             IMG STYLE
 ********************************************/
-img{
-	max-width: 100%;
+ main img{
 	height:auto;
 	width: auto;
 }
@@ -229,8 +228,7 @@ a:active{
 	background-color: #c78c06;
 }
 nav{
-	display: flex;
-	justify-content: center;
+
 	background: #222222;
 	margin: 0 auto;
 }
@@ -565,8 +563,6 @@ are my kryptonite. However I modified the answer it gave me because it was gridd
 *******************************/
 /*got helped to center everything, still got a problem with how my logo reacts, but I believe it is as close to the mockup as I could make it*/
 	nav{
-		display:flex;
-		justify-content: flex-end;
 		padding:10px;
 	}	
 	#logo{
@@ -600,8 +596,8 @@ are my kryptonite. However I modified the answer it gave me because it was gridd
 	/*remade the box behind the text because i see it a bit darker in the browser section, compared to the mobile version*/
 	header .text{
 		background-color: rgba(0, 0, 0, 0.556);
-		margin-right: 20px;
-		margin-left:20px;
+		margin-right:10px;
+		margin-left:10px;
 		padding-top:30px;
 		padding-bottom:30px;
 		padding-top:none;
