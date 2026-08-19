@@ -170,6 +170,7 @@ footer{
             IMG STYLE
 ********************************************/
  main img{
+	max-width: 100%;
 	height:auto;
 	width: auto;
 }
@@ -235,7 +236,6 @@ nav{
 nav .limit{
 	padding: 10px;
 	font-size: 15px;
-	width:100%
 }
 nav a{
 	padding: 15px;
