@@ -76,7 +76,7 @@ the wideness of the website-->
                 </div>
                 </section>
 <!--Then I created a box for the different services that I can use to fix the boxes side to side or in a column with flexbox-->
-                <div class="boxes">
+                <section class="boxes">
                     <h2 id="service">Our Services</h2>
                     <article class="box1">
                         <img src="images/digital.jpg" alt="Image of an emplyer using phone and laptop">
@@ -118,10 +118,11 @@ the wideness of the website-->
                             meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog.</p>
                             <button>Print Plans<span class="material-symbols-outlined">arrow_right</span></button>
                         </article>
-                </div>
+                    </section>
 <!--I created the vision box for the images to be its background and then the text to be on top of the image-->
             <article class="vision">
-                <div class="visiontext">
+
+                <div class="visiontext limit">
                     <h3>Our Vision</h3>
                     <p>Scratch the furniture lick butt. Headbutt owner's knee leave hair on owner's clothes 
                     and gnaw the corn cob but shake treat bag, or munch, munch, chomp, chomp lounge in
@@ -131,7 +132,7 @@ the wideness of the website-->
             </article>
 <!--Then I created a tim box for the members of the company, leaving the title on its own so that I can move the text and images freely-->
             <article id="Tim">
-                <h2>Our Team</h2>
+                <h2 class="limit">Our Team</h2>
 <!--I figure that either way I would have to type a bit depending on how I organized the photo and text on my css. I decided on putting the photos on its own box and the 
 text on its own that wat they can sit side by side, or photo then text in the phone format-->
                 <article class="limit">                
@@ -139,12 +140,14 @@ text on its own that wat they can sit side by side, or photo then text in the ph
                     <div class="m1photo">
                         <img src="images/john.jpg" alt="Portrait of a serious CEO">
                     </div>
+                    <div>
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
                         coming in meeeeouw. </p>
+                        </div>
                     </div>
                 </article>
                 <article class="limit">
@@ -152,20 +155,23 @@ text on its own that wat they can sit side by side, or photo then text in the ph
                     <div class="m2photo">
                         <img src="images/bob.jpg" alt="Portrait of a no so serious CFO">
                     </div>
+                    <div>
                     <h3>Bob Bite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p>Eat fish on floor flex claws on the human's belly and purr like a lawnmower. 
                         There's a forty year old lady there let us feast i shall purr myself to sleep 
                         so attack like a vicious monster for check cat door for ambush 10 times before 
                         coming in meeeeouw, leave buried treasure in the sandbox for the toddlers. </p>
+                    </div>
                 </div>
                 </article>
             </article>
 <!--Finally, the Contact section is divided in three boxes, messages, location and hours. I set them in boxes because in the phone version the hours are located on top of 
 the map. This way I can jsut move hours before and then in website format I can put location and contact to sit side by side.-->
+            <div class="information">
             <div class="limit">
+            <h2>Contact Us</h2>
             <section id="Contact">
-                <h2>Contact Us</h2>
                 <div class="message">
                     <h3>Send us a message</h3>
                         <form action="#" method="get">
@@ -174,17 +180,14 @@ the map. This way I can jsut move hours before and then in website format I can 
                         <label for="email">Email</label>
                         <input id="email" type="email" name="email">
                         <label for="message">Message</label>
-                        <input id="message" type="text" name="message">
+                        <textarea id="message" name="message"></textarea>
                         <button type="submit">Send</button>
                         </form>
                 </div>
             </section>            
-            </div>
             
-            <div class="limit">
+            <section class="hours">
                 <h3>Hours of operation</h3>
-
-            <div class="hours">
                 <div class="header">Days</div>
                 <div class="header">Hours</div>
 
@@ -194,13 +197,14 @@ the map. This way I can jsut move hours before and then in website format I can 
                 <div>Saturday - Sunday</div>
                 <div> Closed</div>
                 
-            </div>    
-            </div>
-            <div class="limit">
-                <div class="location">
+            </section>    
+            
+            
+                <section class="location">
                     <h3>Location</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17184.51446447573!2d-75.78055842148821!3d45.35108591331304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e1!3m2!1sen!2sca!4v1785359595267!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                </div>
+                </section>
+            </div>
             </div>    
         </main>
 <!--The fotter has its own limit and paragraph-->

@@ -50,6 +50,7 @@ table {
 /*******************************************
             BACKGROUND STYLE
 ********************************************/
+/*This section is giving general instructions for the website organization*/
 html{
 	font-size:10px;
 	font-family:"open-sans", sans-serif;
@@ -73,6 +74,10 @@ iframe{
   'GRAD' 0,
   'opsz' 24
 }
+main .material-symbols-outlined, header .material-symbols-outlined{
+	font-size:45px;
+}
+
 footer{
 	padding-top:15px;
 	background-color: #222222;
@@ -81,6 +86,7 @@ footer{
 /*******************************************
             BUTTON STYLE
 ********************************************/
+/*section of buttons, every button was targeted individually and together in one section just because I felt having the buttons all together would help them*/
 .connect button{
 	display:flex;
 	background-color: #c78c06;
@@ -171,6 +177,8 @@ img{
 /*******************************************
             TEXT STYLE
 ********************************************/
+/*I decided to have an overall for text in another section instead of putting it all in the first section at the start*/
+/*took the hover button information from my midterm assignment*/
 h1{
 	font-size: 45px;
 	font-weight: bold;
@@ -193,6 +201,9 @@ h4{
 	font-weight:bolder;
 	color:#222222;
 }
+p{
+	font-size:10px;
+}
 a{
 	color:#c78c06;
 	text-decoration: none;
@@ -209,9 +220,11 @@ a:active{
 /*******************************************
             MOBILE STYLE
 ********************************************/
+/*Here is were I started to target the website elements to help organize and style everything*/
 /******************
 	NAV STYLE
 ******************/
+/*use flex to manipulate and organize the nav*/
 #logo{
 	background-color: #c78c06;
 }
@@ -251,6 +264,7 @@ nav button{
 /******************
 	HEADER STYLE
 ******************/
+/*with help of the professor used the image as a background in css instead of html, used the samething for the vision section*/
 header{
 	background-image: url("../images/main-banner.jpg");
 	background-size: cover;
@@ -277,6 +291,7 @@ header .text{
 /******************
 	ABOUT STYLE
 ******************/
+/*simple styling text, padding*/
 .pinpon, #about{
 	background-color: #ffe6ac;
 }
@@ -298,11 +313,16 @@ header .text{
 /********************
 	SERVICES STYLE
 *********************/
+/*Boxes are services adn I use a convination of margin and padding to organize and separate each box*/
+/*I divided them by numbers cuz when I was working on them I started to get confused and lost my boxes a few times*/
 /*1*/
 
 .boxes h2{
 	padding-top:25px;
 	padding-bottom:15px;
+}
+.boxes p{
+	padding:10px;
 }
 .box1{
 	background-color: #ffe6ac;
@@ -312,11 +332,8 @@ header .text{
 .box1 img{
 	width:500px;
 }
-.boxes h3, p{
+.boxes h3{
 	padding:10px;
-}
-.box1 p{
-	font-size:10px;
 }
 .box1 button{
 	margin-left:10px;
@@ -378,6 +395,7 @@ header .text{
 /********************
 	VISION STYLE
 *********************/
+/*used the image in css*/
 .vision{
 	background-image: url("../images/vision.jpg");
 	background-size:cover;
@@ -385,6 +403,7 @@ header .text{
 	padding-top:10px;
 	padding-bottom: 10px;
 }
+
 .visiontext{
 	color:white;
 	font-size:10px;
@@ -392,18 +411,18 @@ header .text{
 }
 .vision h3{
 	color:white;
-	margin-left:10px;
 	padding-top:10px;
 }
 
 .visiontext button{
-	margin-left:10px;
+
 	margin-bottom: 10px;
 }
 
 /********************
-	TEAM STYLE HELP NEEDED
+	TEAM STYLE
 *********************/
+/*This section I had issues with the line, after talking to the professor I understood how the bottom line behaved and why it was behaving the way it did*/
 #Tim h2{
 	margin:10px;
 	padding-top:30px;
@@ -421,15 +440,18 @@ header .text{
 }
 
 .member1 h4, .member2 h4{
-	width:300px;
+	padding-right:10px;
 	padding-bottom:2px;
 
 }
-/*QUESTION ABOUT THE LINE*/
+.member1 p, .member2 p{
+	font-size:12px;
+	padding: 10px;
+}
+/*QUESTION ABOUT THE LINE*//*question got answered, THANK YOU!*/
 .member1 h4::after, .member2 h4::after{
 	content:"";
 	display: block;
-	width: 450px;
 	border-bottom: 2px solid #c78c06;
 	margin:auto 0;
 }
@@ -437,34 +459,34 @@ header .text{
 /********************
 	CONTACT STYLE POTENTIAL IMPROVEMENT
 *********************/
-#Contact h2{
-	padding-top:30px;
-	padding-bottom:10px;
+.information{
+	margin-top: 30px;
 }
+
 #Contact label{
 	display:block;
 	margin-top:10px;
 	margin-bottom:10px;
 }
-
-#Contact input[type=text], #Contact input[type=email]{
+/*Googled and chatgpt this particular section, I used it in my midterm as well. I am still unsure as to how to make it react in a particular way, but I understand the
+overall gesture of it*/
+#Contact input, #Contact textarea{
 	display:block;
 	height: 20px;
-	width:400px;
+	width:100%;
 	padding:10px;
 	box-sizing: border-box;
 }
 
 #Contact textarea{
-	display: block;
-	width:auto;
 	height: 180px;
-	padding:10px;
 }
 
 /********************
 	TIMETABLE STYLE POTENTIAL IMPROVEMENT
 *********************/
+/*this section had a couple of changes when working on it. The main thing I am still unsure of its use is the >. I was asking help to chatgpt, because for some reason tables
+are my kryptonite. However I modified the answer it gave me because it was gridding the entire website, instead of just the table.*/
 .limit h3{
 	padding-top:10px;
 	padding-bottom:10px;
@@ -473,6 +495,9 @@ header .text{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-bottom:10px;
+}
+.hours h3{
+	grid-column: span 2;
 }
 .hours > div{
 	padding: 10px;
@@ -494,8 +519,9 @@ header .text{
 /******************************************
 			MEDIA QUERIES
 ******************************************/
+/*Starting the media querie, was a bit overwhelming because i realized I needed to write an entire website*/
 @media screen and (min-width:800px){
-
+/*Divided it the same way I did the mobile version*/
 	.limit{
 		width:90%;
 		max-width:970px;
@@ -516,7 +542,7 @@ header .text{
 	}
 	h1{
 		font-size:60px;
-		line-height: none;
+	
 	}
 	h2{
 		font-size:40px;
@@ -530,19 +556,21 @@ header .text{
 	.connect button{
 		font-size: 16px;
 	}
-	iframe{
-		width:50%
+
+	footer{
+		padding-bottom: 10px;
 	}
 /******************************
 		NAV
 *******************************/
+/*got helped to center everything, still got a problem with how my logo reacts, but I believe it is as close to the mockup as I could make it*/
 	nav{
 		display:flex;
 		justify-content: flex-end;
 		padding:10px;
 	}	
 	#logo{
-		background-color:none;
+		background-color:transparent;
 	}
 	#logo img{
 		width:65px;
@@ -550,6 +578,7 @@ header .text{
 	nav .limit{
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	nav ul{
 		display:flex;
@@ -568,6 +597,7 @@ header .text{
 		padding-left:40px;
 		padding-right:40px;
 	}
+	/*remade the box behind the text because i see it a bit darker in the browser section, compared to the mobile version*/
 	header .text{
 		background-color: rgba(0, 0, 0, 0.556);
 		margin-right: 20px;
@@ -583,6 +613,7 @@ header .text{
 /******************************
 		ABOUT
 *******************************/
+/*the easiest portion of just aligning everything together dividing it into two, using flex*/
 #about .limit{
 	display:flex;
 	align-items:stretch;
@@ -610,6 +641,8 @@ header .text{
 /******************************
 		SERVICES
 *******************************/
+/*cheated a little bit in here with chatgpt, I knew i needed grid to make it work, but I was just having issues making it work. I compared my answer to the chatgpt response
+and made it work.*/
 .boxes{
 	width:90%;
 	max-width:970px;
@@ -624,6 +657,7 @@ header .text{
 .boxes p{
 	font-size: 12px;
 }
+/*this particular comand is the one that made everything look how I wanted it, I tried understanding its purpose, however it was unclear*/
 .boxes h2{
 	grid-column:1/-1;
 }
@@ -637,14 +671,20 @@ header .text{
 	width:100%;
 	display:block;
 }
+/*section with which I got help from professor*/
+.boxes button{
+	box-sizing:border-box;
+	width: calc(100% - 20px);
+	justify-content: center;
+	font-size: 18px;
+}
 /******************************
 		VISION
 *******************************/
+/*the easiest part of the entire website, very proud of how simple this was*/
 .vision{
 	padding-top:20px;
 	padding-bottom:10px;
-	padding-left:60px;
-	padding-right:60px;
 }
 .visiontext{
 	margin-top:20px;
@@ -655,6 +695,7 @@ header .text{
 /******************************
 		TEAM
 *******************************/
+/*was having trouble with my line for h4, professor explained why it was behaving the way it was. The section needed a particular extra box to bring everything together*/
 #Tim h2{
 	padding-left:60px;
 }
@@ -664,16 +705,6 @@ header .text{
 .member1 h3,.member2 h3{
 	font-size: 25px;
 	font-weight: bolder;
-}
-.member1 h4::after, .member2 h4::after{
-	content:"";
-	display:block;
-	width: 400px;
-	border-bottom: 1px solid #c78c06;
-	margin:auto 0;
-}
-.member1 p, .member2 p{
-	font-size:12px;
 }
 .member1, .member2{
 	display:grid;
@@ -701,26 +732,24 @@ header .text{
 /******************************
 		CONTACT/LOCATION
 *******************************/
+/*This final section contains, the location, contact and hours. HOWEVER I had trouble setting it up.*/
 #Contact h2{
 	padding-bottom:30px;
 }
 
-.limit #Contact{
+.information .limit{
 	display:grid;
 	grid-template-columns:1fr 1fr;
 	gap:20px;
-}
-.limit #Contact h2{
-	grid-column: 1/-1;
-}
-.limit .location{
-	grid-column: 1;
-	grid-row:1;
-}
-.limit .hours{
 
-	grid-column:1;
-	grid-row: 3;
+grid-template-areas:
+"title title"
+"three two"
+"one one";
 }
+.information h2{grid-area: title;}
+.information .hours{grid-area:one}
+.information .location{grid-area:two}
+.information #Contact{grid-area:three}
 
 }
